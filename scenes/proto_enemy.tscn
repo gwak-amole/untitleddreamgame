@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://s5uus1fg0rps"]
+
+[ext_resource type="Texture2D" uid="uid://ct0b7q75dt274" path="res://assets/placehodlers/enemy_placeholder.png" id="1_x05d5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x05d5"]
+
+[node name="proto_enemy" type="CharacterBody2D" unique_id=464319989]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=781620050]
+shape = SubResource("CapsuleShape2D_x05d5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=463635289]
+texture_filter = 1
+texture = ExtResource("1_x05d5")
