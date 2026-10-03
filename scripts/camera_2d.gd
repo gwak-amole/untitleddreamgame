@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 	if player: 
 		position.y = player.position.y
 	
-		position.y = clampf(position.y, 0, 640)
+		position.x = clampf(position.x, 0, 640)
