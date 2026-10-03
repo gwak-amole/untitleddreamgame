@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://t14dg0pwt78r"]
+
+[ext_resource type="Texture2D" uid="uid://d4cubvef7j131" path="res://assets/placehodlers/door_placeholder.png" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
+size = Vector2(30, 32.5)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_83dcw"]
+radius = 15.0
+height = 36.0
+
+[node name="door" type="RigidBody2D" unique_id=1300556284]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1988754676]
+texture_filter = 1
+texture = ExtResource("1_hpvv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=345392795]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_uvdjg")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1416850243]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=51690883]
+position = Vector2(-1, 11)
+shape = SubResource("CapsuleShape2D_83dcw")
